@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#28292a"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/bn_menu"/>
+
+
+        <com.example.vkrv.LockableViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvp"
+            android:layout_above="@+id/bn"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="56dp"
+
+            />
+
+    </FrameLayout>
+</FrameLayout>
